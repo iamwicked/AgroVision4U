@@ -37,35 +37,35 @@ export default function Footer({ ...props }: Props) {
                         </Heading>
                         <ul className="flex flex-col items-start">
                           <li>
-                            <a href="Email" target="_blank" rel="noreferrer">
+                            <a href="mailto:support@example.com" target="_blank" rel="noreferrer">
                               <Heading as="p" className="tracking-[0.32px]">
                                 Email
                               </Heading>
                             </a>
                           </li>
                           <li>
-                            <a href="#" className="mt-3.5">
+                            <button className="mt-3.5">
                               <Heading as="p" className="tracking-[0.32px]">
-                                Talk to A Councellor
+                                Talk to A Counsellor
                               </Heading>
-                            </a>
+                            </button>
                           </li>
                           <li>
-                            <a href="Address" target="_blank" rel="noreferrer" className="mt-[42px]">
+                            <a href="https://example.com/address" target="_blank" rel="noreferrer" className="mt-[42px]">
                               <Heading size="headingxl" as="h5" className="tracking-[-0.44px] !text-gray-900">
                                 Address
                               </Heading>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <button>
                               <div className="mt-3.5 flex items-center gap-2">
                                 <Img src="images/img_linkedin.svg" alt="Linkedin" className="h-[16px]" />
                                 <Heading as="p" className="tracking-[-0.35px]">
                                   Address link
                                 </Heading>
                               </div>
-                            </a>
+                            </button>
                           </li>
                         </ul>
                       </div>
@@ -77,39 +77,39 @@ export default function Footer({ ...props }: Props) {
                         </Heading>
                         <ul className="flex flex-col items-start">
                           <li>
-                            <a href="Program" target="_blank" rel="noreferrer">
+                            <a href="https://example.com/program" target="_blank" rel="noreferrer">
                               <Heading as="p" className="tracking-[0.32px]">
                                 Program
                               </Heading>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <button>
                               <Heading as="p" className="tracking-[0.32px]">
                                 Test series
                               </Heading>
-                            </a>
+                            </button>
                           </li>
                           <li>
-                            <a href="#">
+                            <button>
                               <Heading as="p" className="tracking-[0.32px]">
                                 Skill Connect
                               </Heading>
-                            </a>
+                            </button>
                           </li>
                           <li>
-                            <a href="#">
+                            <button>
                               <Heading as="p" className="tracking-[0.32px]">
                                 Expert Connect
                               </Heading>
-                            </a>
+                            </button>
                           </li>
                           <li>
-                            <a href="#">
+                            <button>
                               <Heading as="p" className="tracking-[0.32px]">
                                 Study Abroad
                               </Heading>
-                            </a>
+                            </button>
                           </li>
                         </ul>
                       </div>
@@ -119,32 +119,32 @@ export default function Footer({ ...props }: Props) {
                         </Heading>
                         <ul className="flex flex-col items-start">
                           <li>
-                            <a href="#">
+                            <button>
                               <Heading as="p" className="tracking-[0.32px]">
                                 About us
                               </Heading>
-                            </a>
+                            </button>
                           </li>
                           <li>
-                            <a href="#">
+                            <button>
                               <Heading as="p" className="tracking-[0.32px]">
                                 Why choose us
                               </Heading>
-                            </a>
+                            </button>
                           </li>
                           <li>
-                            <a href="Policies" target="_blank" rel="noreferrer">
+                            <a href="https://example.com/policies" target="_blank" rel="noreferrer">
                               <Heading as="p" className="tracking-[0.32px]">
                                 Policies
                               </Heading>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <button>
                               <Heading as="p" className="tracking-[0.32px]">
                                 Privacy Policy
                               </Heading>
-                            </a>
+                            </button>
                           </li>
                         </ul>
                       </div>
@@ -154,32 +154,32 @@ export default function Footer({ ...props }: Props) {
                         </Heading>
                         <ul className="flex flex-col items-start">
                           <li>
-                            <a href="#">
+                            <button>
                               <Heading as="p" className="tracking-[0.32px]">
-                                Report{" "}
+                                Report
                               </Heading>
-                            </a>
+                            </button>
                           </li>
                           <li>
-                            <a href="#">
+                            <button>
                               <Heading as="p" className="tracking-[0.32px]">
                                 Trademark Notice
                               </Heading>
-                            </a>
+                            </button>
                           </li>
                           <li>
-                            <a href="#">
+                            <button>
                               <Heading as="p" className="tracking-[0.32px]">
                                 Advertise with us
                               </Heading>
-                            </a>
+                            </button>
                           </li>
                           <li>
-                            <a href="#">
+                            <button>
                               <Heading as="p" className="tracking-[0.32px]">
                                 Help & Support
                               </Heading>
-                            </a>
+                            </button>
                           </li>
                         </ul>
                       </div>
@@ -202,9 +202,8 @@ export default function Footer({ ...props }: Props) {
               </div>
               <div className="relative mt-[-78px] flex items-center justify-end gap-[278px] md:flex-col md:gap-5">
                 <div className="flex items-center gap-5 self-end md:self-auto sm:flex-col">
-                  <a href="#">
-                  </a>
-                  <a href="#">
+                  <button></button>
+                  <a href="https://example.com">
                     <Img
                       src="images/img_group_35450.png"
                       alt="Image"
