@@ -21,7 +21,8 @@ const FeaturedCourse: React.FC = () => {
     useEffect(() => {
         const fetchFeaturedCourse = async () => {
             try {
-                const response = await axios.get<Course>('http://localhost:5000/courses/featured');
+                const response = await axios.get<Course>(process.env.backend_url+'/courses/featured');
+                console.log(response.data);
                 setCourse(response.data);
             } catch (error) {
                 console.error('Error fetching featured course', error);

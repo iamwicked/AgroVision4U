@@ -21,7 +21,9 @@ const RecommendedCourses: React.FC = () => {
     useEffect(() => {
         const fetchRecommendedCourses = async () => {
             try {
-                const response = await axios.get<Course[]>('http://localhost:5000/courses/recommended');
+                const response = await axios.get<Course[]>(process.env.backend_url+'/courses/recommended');
+                console.log(response.data);
+                
                 setCourses(response.data);
             } catch (error) {
                 console.error('Error fetching recommended courses', error);

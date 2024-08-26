@@ -15,7 +15,8 @@ const FAQ: React.FC = () => {
     useEffect(() => {
         const fetchFAQs = async () => {
             try {
-                const response = await axios.get<FAQ[]>('http://localhost:5000/faqs');
+                const response = await axios.get<FAQ[]>(process.env.backend_url+'/faqs');
+                console.log(response.data);
                 setFaqs(response.data);
             } catch (error) {
                 console.error('Error fetching FAQs', error);
