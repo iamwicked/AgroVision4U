@@ -33,7 +33,7 @@ const RecommendedCourses: React.FC = () => {
     }, []);
 
     return (
-        <div className="bg-gray-50 py-8">
+        <div className="bg-[#F5F2F8]  py-8">
             <div className="container mx-auto px-4 max-w-screen-xl">
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Recommended Courses</h2>
                 {error ? (
@@ -42,7 +42,7 @@ const RecommendedCourses: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {courses.map(course => (
                             <div key={course._id} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                                <img src={course.image} alt={course.title} className="w-full h-48 object-cover rounded-md" />
+                                <img src={"images/img_adobestock_461215526.png"} alt={course.title} className="w-full h-48 object-cover rounded-md" />
                                 <h3 className="text-xl font-semibold text-gray-900 mt-4">{course.title}</h3>
                                 <p className="text-gray-700 mt-2">{course.description}</p>
                                 <div className="mt-4 flex items-center justify-between">

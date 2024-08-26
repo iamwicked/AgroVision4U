@@ -40,7 +40,7 @@ const FeaturedCourse: React.FC = () => {
             ) : (
                 course && (
                     <div className="text-center">
-                        <img src={course.image} alt={course.title} className="w-full h-60 object-cover rounded-md mb-4" />
+                        <img src={"images/img_adobestock_566928736.png"} alt={course.title} className="w-full h-60 object-cover rounded-md mb-4" />
                         <h3 className="text-2xl font-semibold text-gray-900">{course.title}</h3>
                         <p className="text-gray-700 mt-2">{course.description}</p>
                         <div className="mt-3 flex items-center justify-center space-x-4">

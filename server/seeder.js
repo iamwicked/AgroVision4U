@@ -20,9 +20,9 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // Sample data
 const categories = [
-  { name: 'Programming', slug: 'programming' },
-  { name: 'Design', slug: 'design' },
-  { name: 'Marketing', slug: 'marketing' },
+  { name: 'Programming', slug: 'programming', description: 'Courses related to various programming languages and technologies.' },
+  { name: 'Design', slug: 'design', description: 'Courses focused on design principles, tools, and techniques.' },
+  { name: 'Marketing', slug: 'marketing', description: 'Courses covering marketing strategies, tools, and digital marketing.' },
 ];
 
 const courses = [
@@ -68,7 +68,7 @@ const courses = [
 
 const faqs = [
   { question: 'What is JavaScript?', answer: 'JavaScript is a programming language.' },
-  { question: 'What is you r Name?', answer: 'My name is Aadi AGrawal.' },
+  { question: 'How do I design a logo?', answer: 'You can design a logo using software like Photoshop.' },
 ];
 
 const users = [

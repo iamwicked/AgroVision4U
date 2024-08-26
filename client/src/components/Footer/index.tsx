@@ -203,17 +203,12 @@ export default function Footer({ ...props }: Props) {
               <div className="relative mt-[-78px] flex items-center justify-end gap-[278px] md:flex-col md:gap-5">
                 <div className="flex items-center gap-5 self-end md:self-auto sm:flex-col">
                   <a href="#">
-                    <Img
-                      src="images/img_group_35450.png"
-                      alt="Image"
-                      className="h-[54px] w-[190px] rounded-[10px] object-contain"
-                    />
                   </a>
                   <a href="#">
                     <Img
                       src="images/img_group_35450.png"
                       alt="Image"
-                      className="h-[56px] w-[196px] rounded-[10px] object-contain"
+                      className="h-[30%] w-[30%] rounded-[8px] object-contain"
                     />
                   </a>
                 </div>

@@ -47,7 +47,7 @@ const CourseList: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {courses.map(course => (
             <article key={course._id} className="bg-white rounded-lg shadow-md p-4">
-              <img src={course.image} alt={course.title} className="w-full h-48 object-cover rounded-md" />
+              <img src={"images/img_adobestock_144833049.png"} alt={course.title} className="w-full h-48 object-cover rounded-md" />
               <h3 className="text-lg font-semibold text-gray-900 mt-2">{course.title}</h3>
               <p className="text-gray-700 mt-1">{course.description}</p>
               <div className="mt-3 flex items-center justify-between">

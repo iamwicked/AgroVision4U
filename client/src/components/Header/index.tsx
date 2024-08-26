@@ -21,7 +21,7 @@ export default function Header({ ...props }: Props) {
     <header {...props}>
       <div className="self-stretch">
         <div className="flex justify-center bg-white-a700 py-[18px]">
-          <div className="container-xs flex items-center justify-between gap-5 lg:px-5 md:flex-col md:px-5">
+          <div className="container-xs flex items-center justify-between gap-5 lg:px-5 md:flex-row md:px-5">
             <Img src="images/img_header_logo.svg" alt="Headerlogo" className="h-[32px] w-[132px] object-contain" />
             <div className="flex w-[58%] items-center justify-center gap-[50px] md:w-full md:flex-row">
               <div className="flex items-center gap-2.5">
@@ -76,7 +76,7 @@ export default function Header({ ...props }: Props) {
       </div>
       <div className="self-stretch">
         <div className="flex justify-center bg-purple-900 py-4">
-          <div className="container-xs flex items-center justify-between gap-5 lg:px-5 md:flex-col md:px-5">
+          <div className="container-xs flex items-center justify-between gap-5 lg:px-5 md:flex-row md:px-5">
             <SelectBox
               indicator={
                 <Img src="images/img_arrowdown_white_a700.svg" alt="Arrow Down" className="h-[8px] w-[12px]" />
@@ -87,19 +87,21 @@ export default function Header({ ...props }: Props) {
               className="flex w-[6%] gap-2.5 p-3 text-[16px] font-semibold tracking-[-0.35px] text-white-a700 md:w-full"
             />
             <div className="flex w-[88%] items-center justify-between gap-5 md:w-full sm:flex-row">
+
               <Input
                 name="search"
                 placeholder={`Type skill here`}
                 value={searchBarValue}
                 onChange={(e) => setSearchBarValue(e.target.value)}
                 prefix={
-                  <div className="flex h-[20px] w-[20px] items-center justify-center">
+                  <div className="flex h-[20px] w-[20px] items-center justify-center block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                     <Img src="images/img_search_gray_800.svg" alt="Search" className="h-[20px] w-[20px]" />
                   </div>
                 }
                 suffix={searchBarValue?.length > 0 ? <CloseSVG onClick={() => setSearchBarValue("")} /> : null}
                 className="flex h-[46px] w-[34%] items-center justify-center gap-3 rounded-[22px] bg-white-a700_f7 px-3.5 text-[14px] tracking-[-0.31px] text-blue_gray-400 sm:w-full"
               />
+
               <div className="flex items-center gap-3">
                 <a href="#">
                   <Img src="images/img_cart.svg" alt="Cart" className="h-[20px] w-[20px] self-end" />
