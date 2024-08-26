@@ -18,7 +18,7 @@ const CourseList: React.FC = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await axios.get<Course[]>('http://localhost:5000/courses');
+        const response = await axios.get<Course[]>('https://agrobackend-inxen38l4-iamwickeds-projects.vercel.app/courses');
         setCourses(response.data);
       } catch (error) {
         console.error('Error fetching courses', error);

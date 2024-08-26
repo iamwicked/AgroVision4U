@@ -1,15 +1,20 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const cors = require('cors'); // Import the cors middleware
+const cors = require('cors');
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Configure CORS to allow all origins
+app.use(cors({
+  origin: '*',
+  credentials: true
+}));
+
 app.use(express.json());
-app.use(cors());
 
 // Import routes
 const categoryRoutes = require('./routes/Category');
