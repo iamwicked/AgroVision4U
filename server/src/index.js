@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const cors = require('cors'); // Import the cors middleware
 
 dotenv.config();
 
@@ -8,10 +9,17 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
+app.use(cors());
 
-// Import routes (you can define these in src/routes)
-// const userRoutes = require('../routes/userRoutes');
-// app.use('/api/users', userRoutes);
+// Import routes
+const categoryRoutes = require('./routes/Category');
+const courseRoutes = require('./routes/Course');
+const faqRoutes = require('./routes/FAQ');
+
+// Use routes
+app.use('/', categoryRoutes);
+app.use('/', courseRoutes);
+app.use('/', faqRoutes);
 
 app.get('/', (req, res) => {
   res.send('Backend is running!');
