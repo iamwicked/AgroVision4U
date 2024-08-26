@@ -15,7 +15,7 @@ const FAQ: React.FC = () => {
     useEffect(() => {
         const fetchFAQs = async () => {
             try {
-                const response = await axios.get<FAQ[]>('https://agrobackend-inxen38l4-iamwickeds-projects.vercel.app/faqs');
+                const response = await axios.get<FAQ[]>('https://agrobackend2.vercel.app/faqs');
                 setFaqs(response.data);
             } catch (error) {
                 console.error('Error fetching FAQs', error);

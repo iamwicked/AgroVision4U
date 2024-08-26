@@ -21,7 +21,7 @@ const RecommendedCourses: React.FC = () => {
     useEffect(() => {
         const fetchRecommendedCourses = async () => {
             try {
-                const response = await axios.get<Course[]>('https://agrobackend-inxen38l4-iamwickeds-projects.vercel.app/courses/recommended');
+                const response = await axios.get<Course[]>('https://agrobackend2.vercel.app/courses/recommended');
                 setCourses(response.data);
             } catch (error) {
                 console.error('Error fetching recommended courses', error);
